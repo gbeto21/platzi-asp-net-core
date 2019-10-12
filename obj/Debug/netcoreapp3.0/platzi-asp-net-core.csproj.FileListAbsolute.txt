@@ -33,3 +33,4 @@ c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.Views.p
 c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.dll
 c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.pdb
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csproj.CopyComplete
+c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Escuela\Index.cshtml.g.cs
