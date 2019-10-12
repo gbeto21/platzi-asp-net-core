@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>platzi_asp_net_core</RootNamespace>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+  </ItemGroup>
+
+</Project>
