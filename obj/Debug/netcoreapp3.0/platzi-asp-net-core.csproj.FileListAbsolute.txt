@@ -40,3 +40,4 @@ c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Asignatura\Mult
 c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Shared\ObjetoEscuelaSimple.cshtml.g.cs
 c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Index.cshtml.g.cs
 c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\MultiAlumno.cshtml.g.cs
+c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Shared\ListaObjetoEscuela.cshtml.g.cs

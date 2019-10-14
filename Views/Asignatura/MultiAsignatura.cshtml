@@ -8,10 +8,7 @@
 
 
 <strong>Desde la vista parcial</strong>
-@foreach (var asignatura in Model)
-{
-    <partial name="ObjetoEscuelaSimple" model = "asignatura"/>
-}
+<partial name="ListaObjetoEscuela" />
 
 <p>
     <i>@ViewBag.Fecha</i>
