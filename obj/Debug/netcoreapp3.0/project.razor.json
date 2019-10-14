@@ -14354,6 +14354,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Shared\\ObjetoEscuelaSimple.cshtml",
+      "TargetPath": "Views\\Shared\\ObjetoEscuelaSimple.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -14364,8 +14369,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\AsignaturaSimple.cshtml",
-      "TargetPath": "Views\\Shared\\AsignaturaSimple.cshtml",
+      "FilePath": "Views\\Alumno\\Index.cshtml",
+      "TargetPath": "Views\\Alumno\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14391,6 +14396,11 @@
     {
       "FilePath": "Views\\Asignatura\\Index.cshtml",
       "TargetPath": "Views\\Asignatura\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Alumno\\MultiAlumno.cshtml",
+      "TargetPath": "Views\\Alumno\\MultiAlumno.cshtml",
       "FileKind": "mvc"
     },
     {

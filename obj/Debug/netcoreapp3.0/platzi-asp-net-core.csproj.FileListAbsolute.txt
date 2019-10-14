@@ -36,5 +36,7 @@ C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.dll
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.pdb
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csproj.CopyComplete
 c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csprojAssemblyReference.cache
-c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Shared\AsignaturaSimple.cshtml.g.cs
 c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Asignatura\MultiAsignatura.cshtml.g.cs
+c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Shared\ObjetoEscuelaSimple.cshtml.g.cs
+c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Index.cshtml.g.cs
+c:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\MultiAlumno.cshtml.g.cs

@@ -1,0 +1,29 @@
+﻿@model List<Alumno> 
+
+@{
+    ViewData["Title"] = "Información Alumnos";
+}
+
+<h1>@ViewData["Title"] </h1>
+
+<strong>Desde la vista parcial</strong>
+
+<table class="table table-dark table-hover">
+    <thread>
+        <tr>
+            <th scope ="col">Nombre</th>
+            <th scope ="col">Id</th>
+        </tr>
+    </thread>
+    <tbody>
+
+        @foreach (var alumno in Model)
+        {
+            <tr>
+                <td>@alumno.Nombre</td>
+                <td>@alumno.UniqueId</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
