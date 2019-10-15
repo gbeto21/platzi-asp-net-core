@@ -12,7 +12,7 @@ namespace platzi_asp_net_core.Controllers
         {
             var asignatura = new Asignatura()
             {
-                UniqueId = Guid.NewGuid().ToString(),
+                Id = Guid.NewGuid().ToString(),
                 Nombre = "Programación Orientada a Objetos."
             };
 
@@ -24,11 +24,11 @@ namespace platzi_asp_net_core.Controllers
         {
 
             var asignaturas = new List<Asignatura>(){
-                            new Asignatura{Nombre="Matemáticas", UniqueId = Guid.NewGuid().ToString()} ,
-                            new Asignatura{Nombre="Educación Física", UniqueId = Guid.NewGuid().ToString()},
-                            new Asignatura{Nombre="Castellano", UniqueId = Guid.NewGuid().ToString()},
-                            new Asignatura{Nombre="Ciencias Naturales", UniqueId = Guid.NewGuid().ToString()},
-                            new Asignatura{Nombre="Programación OO", UniqueId = Guid.NewGuid().ToString()}
+                            new Asignatura{Nombre="Matemáticas", Id = Guid.NewGuid().ToString()} ,
+                            new Asignatura{Nombre="Educación Física", Id = Guid.NewGuid().ToString()},
+                            new Asignatura{Nombre="Castellano", Id = Guid.NewGuid().ToString()},
+                            new Asignatura{Nombre="Ciencias Naturales", Id = Guid.NewGuid().ToString()},
+                            new Asignatura{Nombre="Programación OO", Id = Guid.NewGuid().ToString()}
                 };
 
             return View(asignaturas);

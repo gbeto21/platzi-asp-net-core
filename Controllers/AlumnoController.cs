@@ -13,7 +13,7 @@ namespace platzi_asp_net_core.Controllers
         {
             var alumno = new Alumno()
             {
-                UniqueId = Guid.NewGuid().ToString(),
+                Id = Guid.NewGuid().ToString(),
                 Nombre = "Mario Franco Morales."
             };
 
@@ -29,7 +29,7 @@ namespace platzi_asp_net_core.Controllers
             return View(alumnos);
         }
 
-        private List<Alumno> CrearAlumnos()
+        private IEnumerable<Alumno> CrearAlumnos()
         {
             string[] nombre1 = { "José", "Josué", "Javier", "Jimena", "Jesús", "Alvaro", "Nicolás" };
             string[] apellido1 = { "Ruiz", "Sarmiento", "Uribe", "Maduro", "Trump", "Toledo", "Herrera" };
@@ -41,11 +41,12 @@ namespace platzi_asp_net_core.Controllers
                                select new Alumno
                                {
                                    Nombre = $"{n1} {n2} {a1}",
-                                   UniqueId = Guid.NewGuid().ToString()
+                                   Id = Guid.NewGuid().ToString()
                                };
 
-            return listaAlumnos.OrderBy((al) => al.UniqueId).ToList();
+            return listaAlumnos.OrderBy((al) => al.Id).ToList();
         }
+
 
     }
 }
