@@ -11,7 +11,6 @@ namespace platzi_asp_net_core.Controllers
         #region Variables
         private EscuelaContext mescContexto;
 
-
         #endregion
 
         #region Constructores
@@ -31,12 +30,5 @@ namespace platzi_asp_net_core.Controllers
 
         #endregion
 
-
     }
 }
-
-/*
-            
-            ViewBag.CosaDinamica = "La monja.";
-
- */

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using platzi_asp_net_core.Models;
@@ -8,13 +9,24 @@ namespace platzi_asp_net_core.Controllers
     public class AsignaturaController : Controller
     {
 
+        #region Variables
+        private EscuelaContext mescContexto;
+
+        #endregion
+
+        #region Constructores
+        public AsignaturaController(EscuelaContext pContext)
+        {
+            this.mescContexto = pContext;
+        }
+
+        #endregion
+
+        #region Métodos públicos
+
         public IActionResult Index()
         {
-            var asignatura = new Asignatura()
-            {
-                Id = Guid.NewGuid().ToString(),
-                Nombre = "Programación Orientada a Objetos."
-            };
+            var asignatura = mescContexto.Asignaturas.FirstOrDefault();
 
             ViewBag.Fecha = DateTime.Now;
             return View(asignatura);
@@ -22,17 +34,9 @@ namespace platzi_asp_net_core.Controllers
 
         public IActionResult MultiAsignatura()
         {
-
-            var asignaturas = new List<Asignatura>(){
-                            new Asignatura{Nombre="Matemáticas", Id = Guid.NewGuid().ToString()} ,
-                            new Asignatura{Nombre="Educación Física", Id = Guid.NewGuid().ToString()},
-                            new Asignatura{Nombre="Castellano", Id = Guid.NewGuid().ToString()},
-                            new Asignatura{Nombre="Ciencias Naturales", Id = Guid.NewGuid().ToString()},
-                            new Asignatura{Nombre="Programación OO", Id = Guid.NewGuid().ToString()}
-                };
-
-            return View(asignaturas);
+            return View(mescContexto.Asignaturas);
         }
-
+        #endregion
+    
     }
 }

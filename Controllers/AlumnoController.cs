@@ -9,44 +9,33 @@ namespace platzi_asp_net_core.Controllers
     public class AlumnoController : Controller
     {
 
+        #region Variables
+        private EscuelaContext mescContexto;
+
+        #endregion
+
+        #region Constructores
+        public AlumnoController(EscuelaContext pContext)
+        {
+            this.mescContexto = pContext;
+        }
+
+        #endregion
+
+        #region Métodos públicos
+
         public IActionResult Index()
         {
-            var alumno = new Alumno()
-            {
-                Id = Guid.NewGuid().ToString(),
-                Nombre = "Mario Franco Morales."
-            };
-
             ViewBag.Fecha = DateTime.Now;
-            return View(alumno);
+            return View(mescContexto.Alumnos.FirstOrDefault());
         }
 
         public IActionResult MultiAlumno()
         {
-
-            var alumnos = CrearAlumnos();
-
-            return View(alumnos);
+            return View(mescContexto.Alumnos);
         }
 
-        private IEnumerable<Alumno> CrearAlumnos()
-        {
-            string[] nombre1 = { "José", "Josué", "Javier", "Jimena", "Jesús", "Alvaro", "Nicolás" };
-            string[] apellido1 = { "Ruiz", "Sarmiento", "Uribe", "Maduro", "Trump", "Toledo", "Herrera" };
-            string[] nombre2 = { "Freddy", "Anabel", "Rick", "Murty", "Silvana", "Diomedes", "Nicomedes", "Teodoro" };
-
-            var listaAlumnos = from n1 in nombre1
-                               from n2 in nombre2
-                               from a1 in apellido1
-                               select new Alumno
-                               {
-                                   Nombre = $"{n1} {n2} {a1}",
-                                   Id = Guid.NewGuid().ToString()
-                               };
-
-            return listaAlumnos.OrderBy((al) => al.Id).ToList();
-        }
-
+        #endregion
 
     }
 }
