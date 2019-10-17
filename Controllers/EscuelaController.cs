@@ -1,4 +1,3 @@
-using System;
 using Microsoft.AspNetCore.Mvc;
 using platzi_asp_net_core.Models;
 using System.Linq;

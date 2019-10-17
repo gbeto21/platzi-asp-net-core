@@ -1,8 +1,7 @@
-using System.Linq;
-using System;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using platzi_asp_net_core.Models;
+using System;
+using System.Linq;
 
 namespace platzi_asp_net_core.Controllers
 {

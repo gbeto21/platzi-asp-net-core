@@ -1,7 +1,7 @@
 
 public enum LlaveDiccionario
 {
-    Escuela ,
+    Escuela,
     Curso,
     Alumno,
     Asignatura,
