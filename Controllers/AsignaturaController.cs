@@ -23,12 +23,21 @@ namespace platzi_asp_net_core.Controllers
 
         #region Métodos públicos
 
-        public IActionResult Index()
+        [Route("Asignatura/Index")]
+        [Route("Asignatura/Index/{pAsignaturaId}")]
+        public IActionResult Index(string pAsignaturaId)
         {
-            var asignatura = mescContexto.Asignaturas.FirstOrDefault();
+            if (string.IsNullOrEmpty(pAsignaturaId))
+                return Content("No encontramos la asignatura solicitada.");
 
-            ViewBag.Fecha = DateTime.Now;
-            return View(asignatura);
+            else
+            {
+                var asignatura = from asig in mescContexto.Asignaturas
+                                 where asig.Id == pAsignaturaId
+                                 select asig;
+
+                return View(asignatura.SingleOrDefault());
+            }
         }
 
         public IActionResult MultiAsignatura()

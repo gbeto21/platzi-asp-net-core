@@ -56,7 +56,7 @@ namespace platzi_asp_net_core
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Escuela}/{action=Index}/{id?}");
+                    pattern: "{controller=Escuela}/{action=Index}/{pId?}");
             });
         }
     }
