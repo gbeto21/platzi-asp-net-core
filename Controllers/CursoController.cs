@@ -32,8 +32,8 @@ namespace platzi_asp_net_core.Controllers
             else
             {
                 var curso = from curs in mescContexto.Cursos
-                             where curs.Id == pCursoId
-                             select curs;
+                            where curs.Id == pCursoId
+                            select curs;
 
                 return View(curso.SingleOrDefault());
             }
@@ -42,6 +42,25 @@ namespace platzi_asp_net_core.Controllers
         public IActionResult MultiCurso()
         {
             return View(mescContexto.Cursos);
+        }
+
+        public IActionResult Create()
+        {
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Curso pCurso)
+        {
+            var escuela = mescContexto.Escuelas.FirstOrDefault();
+            pCurso.EscuelaId = escuela.Id;
+
+            pCurso.Id = Guid.NewGuid().ToString();
+            mescContexto.Cursos.Add(pCurso);
+            mescContexto.SaveChanges();
+
+            return View();
         }
 
         //public IActionResult Index()

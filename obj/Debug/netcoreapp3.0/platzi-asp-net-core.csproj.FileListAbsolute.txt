@@ -58,6 +58,6 @@ C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.Views.p
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csproj.CopyComplete
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.dll
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.pdb
-C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csprojAssemblyReference.cache
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Curso\Index.cshtml.g.cs
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Curso\MultiCurso.cshtml.g.cs
+C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Curso\Create.cshtml.g.cs
