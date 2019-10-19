@@ -46,12 +46,22 @@ namespace platzi_asp_net_core.Controllers
 
         public IActionResult Create()
         {
-
             return View();
         }
 
         [HttpPost]
         public IActionResult Create(Curso pCurso)
+        {
+            if (ModelState.IsValid)
+            {
+                AddCourseDataBase(pCurso);
+                return View("Index", pCurso);
+            }
+            else
+                return View(pCurso);
+        }
+
+        private void AddCourseDataBase(Curso pCurso)
         {
             var escuela = mescContexto.Escuelas.FirstOrDefault();
             pCurso.EscuelaId = escuela.Id;
@@ -59,8 +69,6 @@ namespace platzi_asp_net_core.Controllers
             pCurso.Id = Guid.NewGuid().ToString();
             mescContexto.Cursos.Add(pCurso);
             mescContexto.SaveChanges();
-
-            return View();
         }
 
         //public IActionResult Index()
