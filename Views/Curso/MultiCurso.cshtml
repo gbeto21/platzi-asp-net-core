@@ -1,11 +1,14 @@
-﻿@model IEnumerable<Curso> 
+﻿@model IEnumerable<Curso>
 
 @{
     ViewData["Title"] = "Información Cursos";
+    ViewData["Controller"] = "curso";
 }
 
 <h1>@ViewData["Title"] </h1>
 
 <strong>Desde la vista parcial</strong>
+<br />
 
+<partial name="btnCreate" />
 <partial name="ListaObjetoEscuela" />

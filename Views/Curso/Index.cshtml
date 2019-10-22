@@ -1,4 +1,4 @@
-﻿@model Curso 
+﻿@model Curso
 
 @{
     ViewData["Title"] = "Información Curso";
@@ -8,13 +8,15 @@
 
 <strong>Desde la vista normal</strong>
 <p>
-    Nombre: @Model.Nombre<br/>
-    Id: @Model.Id
+    Id: @Model.Id<br />
+    Nombre: @Model.Nombre<br />
+    Dirección: @Model.Dirección<br />
+    Jornada: @Model.Jornada
 </p>
 
 <strong>Desde la vista parcial</strong>
 <!-- <partial name="AsignaturaSimple" model="@Model.Nombre"/> -->
-<partial name="ObjetoEscuelaSimple"/>
+<partial name="ObjetoEscuelaSimple" />
 
 <p>
     <i>@ViewBag.Fecha</i>

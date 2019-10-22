@@ -1,21 +1,46 @@
 @*
-@model List<ObjetoEscuelaBase>
+    @model List<ObjetoEscuelaBase>
 *@
+
+@{
+    var controller = ViewBag.Controller;
+}
 
 <table class="table table-dark table-hover">
     <thread>
         <tr>
-            <th scope ="col">Nombre</th>
-            <th scope ="col">Id</th>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
         </tr>
     </thread>
     <tbody>
 
+
         @foreach (var objetoEscuela in Model)
         {
             <tr>
-                <td>@objetoEscuela.Nombre</td>
                 <td>@objetoEscuela.Id</td>
+                <td>@objetoEscuela.Nombre</td>
+                <td>
+                    <a asp-controller=@controller
+                       asp-action="index"
+                       asp-route-id=@objetoEscuela.Id
+                       class="btn btn-secondary btn-sm ml-2">
+                        Detalles
+                    </a>
+                    <a asp-controller=@controller
+                       asp-action="edit"
+                       asp-route-id=@objetoEscuela.Id
+                       class="btn btn-info btn-sm ml-2">
+                        Editar
+                    </a>
+                    <a asp-controller=@controller
+                       asp-action="delete"
+                       asp-route-id=@objetoEscuela.Id
+                       class="btn btn-danger btn-sm ml-2">
+                        Eliminar
+                    </a>
+                </td>
             </tr>
         }
 

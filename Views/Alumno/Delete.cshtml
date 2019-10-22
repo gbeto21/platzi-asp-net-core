@@ -1,0 +1,12 @@
+@model Alumno
+@{
+    ViewData["Title"] = "Eliminación de alumno";
+}
+
+<form method="post">
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control-plaintext" />
+    </div>
+    <input type="submit" value="Guardar" />
+</form>

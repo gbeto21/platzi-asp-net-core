@@ -1,0 +1,15 @@
+@model Alumno
+@{
+    ViewData["Title"] = "Edición de alumno";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" />
+    </div>
+    <input type="submit" value="Guardar" />
+</form>
