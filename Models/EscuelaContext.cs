@@ -117,22 +117,23 @@ namespace platzi_asp_net_core.Models
         private IEnumerable<Curso> CrearCursos(string pEscuelaId)
         {
             return new List<Curso>() {
-                CrearCurso(pEscuelaId,"101",TiposJornada.Mañana),
-                CrearCurso(pEscuelaId,"201",TiposJornada.Mañana),
-                CrearCurso(pEscuelaId,"301",TiposJornada.Mañana),
-                CrearCurso(pEscuelaId,"401",TiposJornada.Tarde),
-                CrearCurso(pEscuelaId,"501",TiposJornada.Tarde)
+                CrearCurso(pEscuelaId,"101",TiposJornada.Mañana, "Av. Jitomates"),
+                CrearCurso(pEscuelaId,"201",TiposJornada.Mañana, "Av. Jitomates"),
+                CrearCurso(pEscuelaId,"301",TiposJornada.Mañana, "Av. Jitomates"),
+                CrearCurso(pEscuelaId,"401",TiposJornada.Tarde, "Av. Jitomates"),
+                CrearCurso(pEscuelaId,"501",TiposJornada.Tarde, "Av. Jitomates")
             };
         }
 
-        private Curso CrearCurso(string pEscuelaId, string pNombre, TiposJornada pTipoJornada)
+        private Curso CrearCurso(string pEscuelaId, string pNombre, TiposJornada pTipoJornada, string pDireccion = null)
         {
             return new Curso()
             {
                 Id = Guid.NewGuid().ToString(),
                 EscuelaId = pEscuelaId,
                 Nombre = pNombre,
-                Jornada = pTipoJornada
+                Jornada = pTipoJornada,
+                Dirección = pDireccion
             };
         }
 

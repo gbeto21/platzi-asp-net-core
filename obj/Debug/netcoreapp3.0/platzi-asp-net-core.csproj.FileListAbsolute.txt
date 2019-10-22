@@ -101,7 +101,6 @@ C:\Repos\platzi-asp-net-core\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni
 C:\Repos\platzi-asp-net-core\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Repos\platzi-asp-net-core\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Repos\platzi-asp-net-core\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csprojAssemblyReference.cache
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\staticwebassets\platzi-asp-net-core.StaticWebAssets.Manifest.cache
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\staticwebassets\platzi-asp-net-core.StaticWebAssets.xml
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.MvcApplicationPartsAssemblyInfo.cache
@@ -112,6 +111,9 @@ C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.Assembl
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.TagHelpers.input.cache
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.TagHelpers.output.cache
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.RazorCoreGenerate.cache
+C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Create.cshtml.g.cs
+C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Delete.cshtml.g.cs
+C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Edit.cshtml.g.cs
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Index.cshtml.g.cs
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\MultiAlumno.cshtml.g.cs
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Asignatura\Create.cshtml.g.cs
@@ -142,6 +144,3 @@ C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.Views.p
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csproj.CopyComplete
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.dll
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.pdb
-C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Create.cshtml.g.cs
-C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Delete.cshtml.g.cs
-C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\Razor\Views\Alumno\Edit.cshtml.g.cs
