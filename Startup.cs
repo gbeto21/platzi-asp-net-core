@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +31,15 @@ namespace platzi_asp_net_core
             services.AddDbContext<EscuelaContext>(
                 options => options.UseInMemoryDatabase(databaseName: "testDB")
             );
+
+            //services.AddMvc(options =>
+            //{
+            //    options.MaxModelValidationErrors = 50;
+            //    options.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(
+            //        (_) => "The field is required.");
+            //})
+            //.SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

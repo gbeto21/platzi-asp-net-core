@@ -10,6 +10,11 @@
     <div>
         <label asp-for="Nombre"></label>
         <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
     </div>
     <input type="submit" value="Guardar" />
 </form>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery-validate/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>

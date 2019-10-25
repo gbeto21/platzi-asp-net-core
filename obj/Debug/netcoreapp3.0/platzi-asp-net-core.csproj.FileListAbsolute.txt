@@ -144,3 +144,4 @@ C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.Views.p
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.csproj.CopyComplete
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.dll
 C:\Repos\platzi-asp-net-core\obj\Debug\netcoreapp3.0\platzi-asp-net-core.pdb
+C:\Repos\platzi-asp-net-core\bin\Debug\netcoreapp3.0\libman.json
