@@ -337,10 +337,4 @@ ASALocalRun/
 !.vscode/extensions.json
 obj
 bin
-appsettings.json
 appsettings.Development.json
-
--LinkCreaciónCurso
--EliminarCurso
--Agregar,Detalles,Edicion,Eliminacion:Asignaturas
-Agregar,Detalles,Edicion,Eliminacion:Alumnos
